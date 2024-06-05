@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="relative flex flex-col justify-center items-center min-h-screen">
+    <div
+      class="absolute w-full top-0 left-0 bottom-0 h-full blur-[5px] brightness-50 z-10 bg-no-repeat bg-bottom bg-cover bg-background__img"
+    ></div>
+
+    <div
+      class="w-1/2 z-20 min-h-24 flex items-center bg-red-100 bg-opacity-30 justify-between py-4 px-4"
+    >
+      <div class="text-white text-[55px] pl-5 flex items-center gap-2">
+        <div class="flex flex-col">
+          <p class="leading-none mb-[17px]">
+            <span id="deg">36</span> <span>&deg;</span>
+          </p>
+          <p class="text-[15px]" id="time">06.06.2024</p>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <div><img src="./imgs/clouds.png" alt="clouds" width="70" /></div>
+          <p class="text-[20px] leading-none" id="weather__title">Cloudly</p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between text-white font-medium text-[15px] gap-5"
+      >
+        <p>4Am</p>
+        <span>
+          <img src="./imgs/heavy-rain.png" width="40" alt="" />
+        </span>
+        <p>37<span>&deg;</span></p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between text-white font-medium text-[15px] gap-5"
+      >
+        <p>4Am</p>
+        <span>
+          <img src="./imgs/heavy-rain.png" width="40" alt="" />
+        </span>
+        <p>37<span>&deg;</span></p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between text-white font-medium text-[15px] gap-5"
+      >
+        <p>4Am</p>
+        <span>
+          <img src="./imgs/heavy-rain.png" width="40" alt="" />
+        </span>
+        <p>37<span>&deg;</span></p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-between text-white font-medium text-[15px] gap-5"
+      >
+        <p>4Am</p>
+        <span>
+          <img src="./imgs/heavy-rain.png" width="40" alt="" />
+        </span>
+        <p>37<span>&deg;</span></p>
+      </div>
+    </div>
+
+    <!-- bottom -->
+    <div
+      class="z-10 w-1/2 relative min-h-80 bg-background__img bg-cover bg-bottom px-6 py-6 flex flex-col justify-start"
+    >
+      <div
+        class="z-20 absolute top-0 left-0 bottom-0 w-full h-full bg-black bg-opacity-30"
+      ></div>
+
+      <div class="flex gap-2 items-center z-30">
+        <div>
+          <img src="./imgs/placeholder.png" width="30" alt="" />
+        </div>
+        <p class="text-white font-bold text-4xl" id="city__name">Fergana</p>
+        <span class="text-white font-bold text-4xl" id="country__name">UZ</span>
+      </div>
+
+      <div class="flex gap-10 items-center z-30">
+        <div class="flex flex-col gap-2 mt-4">
+          <p class="text-white font-medium">Namlik</p>
+          <p class="text-white font-medium">Yomgir Ehtimoli</p>
+          <p class="text-white font-medium">Shamol Tezligi</p>
+          <p class="text-white font-medium">Namlik</p>
+        </div>
+        <div class="flex flex-col text-white font-medium gap-2 mt-4">
+          <span class="">67%</span>
+          <span>11%</span>
+          <span>67%</span>
+          <span>67%</span>
+        </div>
+      </div>
+      <form action="" id="form" class="absolute right-6 z-30">
+        <input
+          id="input"
+          type="text"
+          placeholder="search...."
+          class="input input-bordered w-full max-w-[300px] border border-white bg-white bg-opacity-40 text-white font-medium placeholder-white"
+        />
+      </form>
+    </div>
+    <script src="./js/request.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
